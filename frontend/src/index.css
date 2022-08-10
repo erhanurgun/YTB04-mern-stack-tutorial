@@ -95,6 +95,8 @@ form button {
   border-radius: 4px;
   cursor: pointer;
   opacity: 0.8;
+  width: 100%;
+  text-transform: uppercase;
 }
 div.error {
   padding: 10px;
@@ -114,4 +116,37 @@ div.error {
 
 :hover {
   opacity: 1;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  margin-left: 10px;
+}
+nav button {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "Poppins";
+  cursor: pointer;
+  font-size: 1em;
+}
+nav button:hover {
+  background: var(--primary);
+  color: #fff;
+  transition: ease-in 100ms;
+}
+/* auth forms */
+form.signup,
+form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
 }
